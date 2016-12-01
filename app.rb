@@ -22,6 +22,24 @@ post '/visit' do
 	@barber = params[:barber]
 	@hair_color = params[:hair_color]
 
+		# create Hash
+		hh = {
+				:user_name => "Enter your name",
+				:phone_number => "Enter phone number",
+				:date_time => "Enter date & time"
+		}
+
+		# For each key, value pair
+		hh.each do |key, value|
+			# if it's clear
+			if params[key] == ""
+				# @error << hh[value] (value is error text message)
+				@error = hh[key]
+				# return visit.erb views
+				return erb :visit
+			end
+		end
+
 		data = File.open 'public/users.txt', 'a'
 		data.write "Client: #{@user_name}; Phone: #{@phone_number}; Date-time: #{@date_time}; Barber: #{@barber}; Color: #{@hair_color}\n"
 		data.close
