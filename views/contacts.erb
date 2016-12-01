@@ -10,10 +10,18 @@
 
   		
     <label>Email address:</label>
-    <input name="cont_email" type="email" class="form-control" placeholder="Email">
+    <input name="cont_email" type="email" class="form-control form_color" placeholder="Email">
 
     <label>Message:</label>
-    <textarea class="form-control" rows="3" name="cont_message" placeholder="Enter your message here"></textarea>
+    <textarea class="form-control form_color" rows="3" name="cont_message" placeholder="Enter your message here"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Send...</button>
 </form>
+
+<script type="text/javascript">
+	
+$(function () {
+	$(".form_color").css("background-color", "#DAD8D8");
+})
+
+</script>

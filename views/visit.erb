@@ -8,22 +8,22 @@
 
   <div class="form-group">
     <label>Enter your name:</label>
-    <input name="user_name" type="text" class="form-control" placeholder="Name">
+    <input name="user_name" type="text" class="form-control form_color" placeholder="Name">
   </div>
 
   <div class="form-group">
     <label>Enter your phone:</label>
-    <input name="phone_number" type="text" class="form-control" placeholder="Phone number">
+    <input name="phone_number" type="text" class="form-control form_color" placeholder="Phone number">
   </div>
 
   <div class="form-group">
     <label>Enter date & time:</label>
-    <input name="date_time" type="text" class="form-control" placeholder="Date & time">
+    <input name="date_time" type="text" class="form-control form_color" placeholder="Date & time">
   </div>
 
   <div class="form-group">
     <label>Choose your barber:</label>
-	    <select name="barber" class="form-control">
+	    <select name="barber" class="form-control form_color">
 		  <option>Walter White</option>
 		  <option>Jessie Pinkman</option>
 		  <option>Barney Stinson</option>
@@ -34,3 +34,11 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<script type="text/javascript">
+	
+$(function () {
+	$(".form_color").css("background-color", "#DAD8D8");
+})
+
+</script>
