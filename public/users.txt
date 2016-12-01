@@ -1,3 +1,4 @@
 Client: Cindy; Phone: 8-910-418-99-81; Date-time: 13.12.2016 21:30; Barber: 
 Client: Cindy; Phone: 8-910-418-99-81; Date-time: 13.12.2016 21:30; Barber: Ted Mosby
 Client: Cindy; Phone: 8-910-418-99-81; Date-time: 13.12.2016 21:30; Barber: Walter White; Color: #7bd148
+Client: Cindy; Phone: 8-910-418-99-81; Date-time: 12.12.2016 22:00; Barber: Ted Mosby; Color: #fbd75b
