@@ -31,3 +31,15 @@ end
 get '/contacts' do
 	erb :contacts
 end
+
+post '/contacts' do
+	@cont_email = params[:cont_email]
+	@cont_message = params[:cont_message]
+
+		cont_data = File.open 'public/contacts.txt', 'a'
+		cont_data.write "Email: #{@cont_email}\nMessage: #{@cont_message}\n\n"
+		cont_data.close
+
+		@message = "Thank you! We will contact you as soon is possible"
+	erb :contacts
+end
