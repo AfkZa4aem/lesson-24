@@ -19,9 +19,10 @@ post '/visit' do
 	@user_name = params[:user_name]
 	@phone_number = params[:phone_number]
 	@date_time = params[:date_time]
+	@barber = params[:barber]
 
 		data = File.open 'public/users.txt', 'a'
-		data.write "Client: #{@user_name}; Phone: #{@phone_number}; Date-time: #{@date_time}\n"
+		data.write "Client: #{@user_name}; Phone: #{@phone_number}; Date-time: #{@date_time}; Barber: #{@barber}\n"
 		data.close
 
 		@message = "Thank you #{@user_name}, we'll wait you at #{@date_time}"
