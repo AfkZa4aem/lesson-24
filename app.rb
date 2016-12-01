@@ -44,3 +44,24 @@ post '/contacts' do
 		@message = "Thank you! We will contact you as soon is possible"
 	erb :contacts
 end
+
+get '/admin' do
+	erb :admin
+end
+
+post '/admin' do
+	@admin_user = params[:admin_user]
+	@admin_pass = params[:admin_pass]
+
+		if @admin_user == "admin" && @admin_pass == "gtgtkfw"	
+			erb :secret
+		else
+			@message = "Access denied"
+			erb :admin
+		end
+
+end
+
+get '/secret' do
+	erb :secret
+end
