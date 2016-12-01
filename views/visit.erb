@@ -31,6 +31,23 @@
 		</select>
   </div>
 
+  <div class="form-group">
+    <label>Choose your color:</label>
+	    <select name="hair_color" id="color">
+		  <option value="#7bd148">Green</option>
+		  <option value="#5484ed">Bold blue</option>
+		  <option value="#a4bdfc">Blue</option>
+		  <option value="#46d6db">Turquoise</option>
+		  <option value="#7ae7bf">Light green</option>
+		  <option value="#51b749">Bold green</option>
+		  <option value="#fbd75b">Yellow</option>
+		  <option value="#ffb878">Orange</option>
+		  <option value="#ff887c">Red</option>
+		  <option value="#dc2127">Bold red</option>
+		  <option value="#dbadff">Purple</option>
+		  <option value="#e1e1e1">Gray</option>
+		</select>
+  </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
@@ -39,6 +56,7 @@
 	
 $(function () {
 	$(".form_color").css("background-color", "#DAD8D8");
-})
+	$("#color").simplecolorpicker();
+});
 
 </script>
